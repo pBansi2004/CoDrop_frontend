@@ -1,0 +1,112 @@
+.repo-detail-container {
+    max-width: 900px;
+    margin: 15px auto;
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 8px;
+    color: #c9d1d9;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .repository-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffdd53;
+  }
+  
+  .toggle-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color:  #f1d453;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #eedd93;
+  }
+  
+  .repo-description {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #adbac7;
+  }
+
+  .repo-owner{
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #adbac7;
+  }
+  
+  .repo-section {
+    margin-bottom: 30px;
+  }
+  
+  .repo-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #c9d1d9;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 5px;
+  }
+  
+  .repo-content-box {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #c9d1d9;
+    overflow-x: auto;
+  }
+  
+  .repo-empty-state {
+    color: #8b949e;
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .repo-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  
+  .repo-actions button {
+    padding: 10px 16px;
+    background-color: #f1d453;
+    border: none;
+    color:  black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .repo-actions button:hover {
+    background-color: #f1dc6f;
+  }
+  
+  .repo-actions .delete-button {
+    background-color: #da3633;
+  }
+  
+  .repo-actions .delete-button:hover {
+    background-color: #f85149;
+  }
+  

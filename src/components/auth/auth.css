@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #121417; /* match your wrapper background */
+  /* color: #ffffff; */
+}
+
+/* Wrapper */
+.login-wrapper {
+  height: 100vh;
+  width: 100%; /* avoid 100vw to prevent overflow */
+  background-color: #121417;
+  color: #e1e4e8;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden; /* optional extra safeguard */
+}
+
+
+/* Logo */
+.logo-login {
+  width: 70px;
+  height: 70px;
+  transition: all 0.3s ease;
+}
+.logo-login:hover {
+  transform: scale(1.1); /* Logo grow effect */
+}
+
+/* Box Wrapper */
+.login-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Main Form Box */
+.login-box {
+  background-color: #1f232a; /* Darker box to match background */
+  padding: 3rem;
+  border-radius: 18px;
+  width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Strong shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* Form Label */
+.label {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Input Styles */
+.input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 8px;
+  border: 2px solid #444d56;
+  background-color: #2a2e36;
+  color: #e1e4e8;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: #ffd700; /* Bright blue for focus */
+  background-color: #333a44; /* Darker background for inputs on hover/focus */
+}
+
+/* Buttons */
+.login-btn,
+.signup-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #ffd700; /* Bright blue for buttons */
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.login-btn:hover,
+.signup-button:hover {
+  background-color: #ffd700; /* Darker blue on hover */
+  cursor: pointer;
+  transform: translateY(-0.5px); /* Button lift effect */
+}
+
+/* Helper Box */
+.pass-box {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a6aab4;
+}
+
+.pass-box a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pass-box a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 420px) {
+  .login-box {
+    width: 90%;
+    padding: 2rem;
+  }
+}

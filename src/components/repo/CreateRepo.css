@@ -1,0 +1,162 @@
+/* Container and Form */
+.create-repo-container {
+    max-width: 600px;
+    margin: 15px auto;
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 8px;
+    color: #c9d1d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .create-repo-form h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .create-repo-form label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .create-repo-form input[type="text"],
+  .create-repo-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #c9d1d9;
+    margin-top: 0.3rem;
+    font-size: 16px;
+  }
+  
+  .create-repo-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Visibility section */
+  .visibility-group {
+    margin: 20px 0;
+  }
+  
+  .visibility-group > span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .visibility-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .visibility-option {
+    display: flex;
+    align-items: center;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .visibility-option input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .visibility-option span {
+    font-size: 15px;
+  }
+  
+  .visibility-option:hover,
+  .visibility-option.active {
+    background-color: #31373e;
+  }
+  
+  /* Content group */
+  .content-group {
+    margin-top: 20px;
+  }
+  
+  .content-group > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .content-item input[type="text"] {
+    flex-grow: 1;
+    padding: 8px 10px;
+    font-size: 15px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #c9d1d9;
+  }
+  
+  .remove-content-btn {
+    margin-left: 8px;
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .remove-content-btn:hover {
+    background-color: #d9363e;
+  }
+  
+  /* Add content button */
+  .add-content-btn {
+    background-color: #ffc400;
+    color:  black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-content-btn:hover {
+    background-color: #ffd000;
+  }
+  
+  /* Submit button */
+  .create-repo-form button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc400;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .create-repo-form button[type="submit"]:hover {
+    background-color: #ffd000;
+  }
+  

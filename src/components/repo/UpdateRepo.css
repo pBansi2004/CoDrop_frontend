@@ -1,0 +1,66 @@
+.update-repo-container {
+    max-width: 900px;
+    margin: 100px auto;
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 8px;
+    color: #c9d1d9;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .update-repo-container h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #ffdd53;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #c9d1d9;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #f1d453;
+    box-shadow: 0 0 5px #f1d45355;
+  }
+  
+  .update-btn {
+    padding: 12px 20px;
+    background-color: #f4d84d;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .update-btn:hover {
+    background-color: #f1db6f;
+  }
+  

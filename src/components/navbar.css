@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 10px 20px;
+  border-bottom: 2px solid white;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav h3 {
+  margin-left: 15px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav p {
+  margin-left: 50px;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav h3:hover,
+nav p:hover {
+  color: #ffd700; /* gold-ish highlight on hover */
+  transform: scale(1.1); /* slightly enlarge on hover */
+}
