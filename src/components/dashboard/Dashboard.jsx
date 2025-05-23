@@ -27,7 +27,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`52.66.237.40:3000/repo/all`);
+        const response = await fetch(`http:/52.66.237.40:3000/repo/all`);
         const data = await response.json();
         setSuggestedRepositories(data);
       } catch (err) {
