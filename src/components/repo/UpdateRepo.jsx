@@ -15,7 +15,7 @@ const UpdateRepo = () => {
   useEffect(() => {
     const fetchRepo = async () => {
       try {
-        const res = await axios.get(`http:/52.66.237.40:3000/repo/${id}`);
+        const res = await axios.get(`http://52.66.237.40:3000/repo/${id}`);
         const repo = res.data[0];
         setDescription(repo.description || "");
       } catch (err) {
@@ -27,7 +27,7 @@ const UpdateRepo = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http:/52.66.237.40:3000/repo/update/${id}`, {
+      await axios.put(`http://52.66.237.40:3000/repo/update/${id}`, {
         description,
         content: newContent,
       });
