@@ -24,7 +24,7 @@ const Profile = () => {
       if (finalUserId) {
         try {
           const response = await axios.get(
-            `http://localhost:3000/userProfile/${finalUserId}`
+            `52.66.237.40:3000/userProfile/${finalUserId}`
           );
           setUserDetails(response.data);
         } catch (err) {

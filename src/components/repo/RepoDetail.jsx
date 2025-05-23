@@ -12,7 +12,7 @@ const RepoDetail = () => {
 
   const fetchRepo = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/repo/${id}`);
+      const response = await axios.get(`52.66.237.40:3000/repo/${id}`);
       setRepository(response.data[0]);
     } catch (err) {
       setError("Failed to fetch repository.");
@@ -26,7 +26,7 @@ const RepoDetail = () => {
 
   const toggleVisibility = async () => {
     try {
-      await axios.patch(`http://localhost:3000/repo/toggle/${id}`);
+      await axios.patch(`52.66.237.40/repo/toggle/${id}`);
       fetchRepo(); // Refresh
     } catch (err) {
       console.error("Failed to toggle visibility:", err);
@@ -35,7 +35,7 @@ const RepoDetail = () => {
 
   const deleteRepo = async () => {
     try {
-      await axios.delete(`http://localhost:3000/repo/delete/${id}`);
+      await axios.delete(`52.66.237.40:3000/repo/delete/${id}`);
       alert("Repository deleted!");
       navigate("/");
     } catch (err) {
